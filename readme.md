@@ -9,7 +9,7 @@ Use
 	<plugin>
 		<groupId>org.bitbucket.joxley</groupId>
 		<artifactId>getdown-maven-plugin</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1</version>
 		<executions>
 			<execution>
 				<phase>package</phase>
