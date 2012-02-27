@@ -5,19 +5,68 @@
 	<artifactId>maven-getdown-plugin</artifactId>
 	<packaging>maven-plugin</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>maven-getdown-plugin Maven Mojo</name>
-	<url>http://bitbucket.org</url>
+	<name>maven-getdown-plugin</name>
+	<url>https://bitbucket.org/joxley/maven-getdown-plugin</url>
+
+	<properties>
+		<maven.test.failure.ignore>true</maven.test.failure.ignore>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>4.10</junit.version>
+		<getdown.version>1.1</getdown.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-plugin-api</artifactId>
 			<version>2.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.threerings</groupId>
+			<artifactId>getdown</artifactId>
+			<version>${getdown.version}</version>
+		</dependency>
+
+		<!-- Tests -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:hg:https://bitbucket.org/joxley/maven-getdown-plugin</connection>
+		<developerConnection>scm:hg:https://bitbucket.org/joxley/maven-getdown-plugin</developerConnection>
+		<url>https://bitbucket.org/joxley/maven-getdown-plugin</url>
+	</scm>
+
+	<description>A maven build plugin for generating getdown digest file.</description>
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+	<developers>
+		<developer>
+			<id>joxley</id>
+			<name>John Oxley</name>
+			<email>john.oxley@gmail.com</email>
+			<roles>
+				<role>Owner</role>
+			</roles>
+		</developer>
+	</developers>
 </project>
