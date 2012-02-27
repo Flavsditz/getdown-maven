@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.bitbucket.joxley</groupId>
-	<artifactId>maven-getdown-plugin</artifactId>
+	<artifactId>getdown-maven-plugin</artifactId>
 	<packaging>maven-plugin</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>maven-getdown-plugin</name>
-	<url>https://bitbucket.org/joxley/maven-getdown-plugin</url>
+	<name>getdown-maven-plugin</name>
+	<url>https://bitbucket.org/joxley/getdown-maven-plugin</url>
 
 	<properties>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
@@ -46,9 +46,9 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:hg:https://bitbucket.org/joxley/maven-getdown-plugin</connection>
-		<developerConnection>scm:hg:https://bitbucket.org/joxley/maven-getdown-plugin</developerConnection>
-		<url>https://bitbucket.org/joxley/maven-getdown-plugin</url>
+		<connection>scm:hg:https://bitbucket.org/joxley/getdown-maven-plugin</connection>
+		<developerConnection>scm:hg:https://bitbucket.org/joxley/getdown-maven-plugin</developerConnection>
+		<url>https://bitbucket.org/joxley/getdown-maven-plugin</url>
 	</scm>
 
 	<description>A maven build plugin for generating getdown digest file.</description>
