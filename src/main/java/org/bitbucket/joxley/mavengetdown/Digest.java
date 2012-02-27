@@ -1,6 +1,9 @@
 package org.bitbucket.joxley.mavengetdown;
 
 import java.io.File;
+import java.io.IOException;
+
+import org.apache.maven.plugin.AbstractMojo;
 
 import com.threerings.getdown.tools.Digester;
 
@@ -9,7 +12,7 @@ import com.threerings.getdown.tools.Digester;
  * 
  * @goal digest
  */
-public class Digest {
+public class Digest extends AbstractMojo {
 	/**
 	 * Application directory
 	 * 
@@ -17,7 +20,11 @@ public class Digest {
 	 */
 	private File appdir;
 
-	public void execute() throws Exception {
-		Digester.createDigest(appdir);
+	public void execute() {
+		try {
+			Digester.createDigest(appdir);
+		} catch (IOException e) {
+			getLog().error(e);
+		}
 	}
 }
