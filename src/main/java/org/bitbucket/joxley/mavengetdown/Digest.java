@@ -4,6 +4,11 @@ import java.io.File;
 
 import com.threerings.getdown.tools.Digester;
 
+/**
+ * Create the digest
+ * 
+ * @goal digest
+ */
 public class Digest {
 	/**
 	 * Application directory
@@ -12,7 +17,7 @@ public class Digest {
 	 */
 	private File appdir;
 
-	public void execute()throws Exception {
+	public void execute() throws Exception {
 		Digester.createDigest(appdir);
 	}
 }
