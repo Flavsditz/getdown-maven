@@ -12,7 +12,7 @@
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.10</junit.version>
-		<getdown.version>1.1</getdown.version>
+		<getdown.version>1.2</getdown.version>
 	</properties>
 
 	<dependencies>
