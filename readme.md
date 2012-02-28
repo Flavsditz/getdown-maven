@@ -1,8 +1,7 @@
 What is it?
 -----------
 
-The maven getdown plugin adds a mcgafter to maven's build lifecycle that will 
-generate [getdown's][1] digest.txt file.
+The maven getdown plugin to maven's build lifecycle to generate [getdown's][1] digest.txt file.
 
 Use
 ---
