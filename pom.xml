@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.bitbucket.joxley</groupId>
 	<artifactId>getdown-maven-plugin</artifactId>
@@ -81,7 +80,6 @@
 					<configuration>
 						<lifecycleMappingMetadata>
 							<pluginExecutions>
-								<!-- copy-dependency plugin -->
 								<pluginExecution>
 									<pluginExecutionFilter>
 										<groupId>org.apache.maven.plugins</groupId>
