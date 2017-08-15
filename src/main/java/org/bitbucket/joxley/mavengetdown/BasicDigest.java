@@ -1,5 +1,6 @@
 package org.bitbucket.joxley.mavengetdown;
 
+import com.threerings.getdown.data.Digest;
 import com.threerings.getdown.data.Resource;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -51,7 +52,7 @@ public class BasicDigest extends AbstractMojo {
                 resources.add(resource);
             }
 
-            com.threerings.getdown.data.Digest.createDigest(resources, digest);
+            com.threerings.getdown.data.Digest.createDigest(Digest.VERSION, resources, digest);
         } catch (IOException e) {
             throw new MojoExecutionException("Failed to execute mojo", e);
         }
